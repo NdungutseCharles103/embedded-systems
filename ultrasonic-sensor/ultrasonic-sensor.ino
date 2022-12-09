@@ -1,8 +1,8 @@
-int trigPin = 3;  // Trigger
-int echoPin = 2;  // Echo
-const int bluePin = 7;
-const int greenPin = 9;
-const int redPin = 11;
+int trigPin = 12;  // Trigger
+int echoPin = 0;  // Echo
+const int bluePin = 1;
+const int greenPin = 8;
+const int redPin = 3;
 long duration, cm, inches;
 
 void setup() {
