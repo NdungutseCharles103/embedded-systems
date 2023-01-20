@@ -22,6 +22,7 @@ void loop()
     delay(5000);
 }
 // https://projects.benax.rw/f/o/r/e/a/c/h/p/r/o/j/e/c/t/s/2a3a671bcd46e96952ddb5de8f43a654/Charles_IoT_Project/backend.php
+
 void connectToWiFi(const char *ssid, const char *passwd)
 {
     WiFi.mode(WIFI_OFF); // This prevents reconnection issue
