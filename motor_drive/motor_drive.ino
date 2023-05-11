@@ -3,7 +3,6 @@ int motorForwardPin = 3;
 int motorReversePin = 2;
 
 
-
 void setup(){ 
 
   pinMode(motorForwardPin, OUTPUT);
