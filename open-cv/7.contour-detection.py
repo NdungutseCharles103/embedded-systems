@@ -2,7 +2,7 @@ import cv2
 # Read an image
 image = cv2.imread('lena.jpg')
 # Load a pre-trained Haar cascade
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('./sunglass-shop/haarcascade_frontalface_default.xml')
 # Convert to grayscale
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # Find contours

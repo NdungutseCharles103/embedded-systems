@@ -1,7 +1,7 @@
 import cv2
 # Read an image
 image = cv2.imread('lenna.png')
-# Crop image
+# Crop image between 100:300 and 200:400
 cropped_image = image[100:300, 200:400]
 # Display cropped image
 cv2.imshow('Cropped Image', cropped_image)
