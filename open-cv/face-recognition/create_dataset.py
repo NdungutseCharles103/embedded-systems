@@ -21,7 +21,7 @@ print("Please wait for 5 seconds...")
 time.sleep(5)
 
 # Initialize sample face image
-start_time = time.time()
+start_time = time()
 interval = 500  # Capture an image every 500 milliseconds
 current_time = start_time
 image_count = 0  # Total number of images captured

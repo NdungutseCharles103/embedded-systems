@@ -2,7 +2,7 @@ import cv2
 # Read an image
 image = cv2.imread('lenna.png')
 # Load a pre-trained Haar cascade
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('face-recognition/models/haarcascade_frontalface_default.xml')
 # Detect faces
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))

@@ -9,9 +9,10 @@ else:
     sys.exit()
 qrDecoder = cv2.QRCodeDetector()
 data, _, foundQRCodeImg = qrDecoder.detectAndDecode(inputImage)
+print(f"underscore {_}")
 if len(data) > 0:
     print("Decoded Data :\n*******************\n{}\n*******************".format(data))
-    cv2.imshow("Detected QRCode", numpy.uint8(foundQRCodeImg))
+    cv2.imshow("Detected QRCode", numpy.uint8(foundQRCodeImg)) # change the type of foundQRCodeImg to uint8, uint8 is the type of image data
     cv2.imwrite("found_qr_code.png", foundQRCodeImg)
 else:
     print("No QR Code detected!")

@@ -1,4 +1,5 @@
 import cv2
+
 # Read an image
 image = cv2.imread('lena.jpg')
 # Load a pre-trained Haar cascade
